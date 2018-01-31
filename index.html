@@ -20,11 +20,11 @@
       </div>
       <!--Колір взуття-->
       <div class="block__color">
-        <img class="block__colorshue" src="images/Nike-shoe.png" alt="Nike SB Stefan Janoski Max">
-        <div class="block__color1"></div>
-        <div class="block__color2"></div>
-        <div class="block__color3"></div>
-        <div class="block__color4"></div>
+        <img class="block__colorshue" id="dark" src="images/Nike-shoe.png" alt="Nike SB Stefan Janoski Max">
+        <div class="block__color1" onclick="document.getElementById('dark').src='images/Nike-shoe.png'"></div>
+        <div class="block__color2" onclick="document.getElementById('dark').src='images/Nike-shoe2.png'"></div>
+        <div class="block__color3" onclick="document.getElementById('dark').src='images/Nike-shoe3.png'"></div>
+        <div class="block__color4" onclick="document.getElementById('dark').src='images/Nike-shoe4.png'"></div>
       </div>
       <!--Інформація-->
       <div class="block__info">
@@ -39,7 +39,8 @@
         <!--Замовлення-->
         <div class="block__order">
           <form class="block__orderform">
-            <select name="Size">
+            <select class="block__orderformsize" name="Size">
+            	<option value="Size">Size</option>
                 <option value="36">36</option>
                 <option value="37">37</option>
                 <option value="38">38</option>
@@ -49,7 +50,8 @@
                 <option value="42">42</option>
                 <option value="43">43</option>
             </select>
-            <select name="Qty">
+            <select class="block__orderformqty" name="Qty">
+            	<option value="Qty">Qty</option>
                 <option value="dark blue">dark blue</option>
                 <option value="yellow">yellow</option>
                 <option value="red">red</option>
@@ -57,7 +59,7 @@
             </select>
             <br>
             <br>
-            <input type="submit" value="Add to card">
+            <input class="block__orderformtype" type="submit" value="Add to card">
           </form>
         </div>
       </div>

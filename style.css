@@ -3,7 +3,7 @@
 	height: 600px;
 	margin: 50px;
 	background-image: url(images/background-image.png);
-	background-size: 800px 600px;
+	background-size: contain;
 	background-color: #d0d0d2;
 }
 
@@ -25,6 +25,11 @@
 	top: 120px;
 	width: 329px;
 	height: 159px;
+}
+
+.block__colorshue:hover {
+    transform: scale(1.05);
+    transition: 1s;
 }
 
 .block__logo {
@@ -118,4 +123,51 @@
 	width: 12px;
 	height: 12px;
 	background: #25e7ee;
+}
+
+.block__color1:hover {
+    transform: scale(1.5);
+    transition: 0.5s;
+    outline: #333 solid 2px;
+}
+
+.block__color2:hover {
+    transform: scale(1.5);
+    transition: 0.5s;
+}
+
+.block__color3:hover {
+    transform: scale(1.5);
+    transition: 0.5s;
+}
+
+.block__color4:hover {
+    transform: scale(1.5);
+    transition: 0.5s;
+}
+
+.block__orderformsize {
+	background: #152335;
+	 width: 65px;
+	 height: 30px;
+	 color: #6a727d;
+}
+
+.block__orderformqty {
+	background: #152335;
+	 width: 65px;
+	 height: 30px;
+	 color: #6a727d;
+}
+
+.block__orderformtype {
+	background: #283443;
+	 width: 180px;
+	 height: 40px;
+	 color: #6a727d;
+	 border: 1px solid #6a727d;
+}
+
+.block__orderformtype:hover {
+	opacity: 0.5;
 }
